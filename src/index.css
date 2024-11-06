@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  height: 12vh;
+  height: 50px;
 }
 
 .left {
@@ -109,7 +109,8 @@ img {
   perspective: 900px;
 
   & img {
-    width: 140px;
+
+    width: 150px;
     height: 100px;
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -213,8 +214,6 @@ button {
   }
 }
 
-
-
 .menu-bar {
   display: none;
 }
@@ -225,8 +224,6 @@ button {
 
 
 @media screen and (max-width:1224px) {
-
-
 
   img {
 
@@ -567,6 +564,7 @@ button {
 
 @media screen and (max-width:470px) {
   .nav {
+    width: 100%;
     .right {
       width: 100px;
 
@@ -592,7 +590,7 @@ button {
     justify-content: start;
     position: absolute;
     right: -10px;
-    top: 46px;
+    top: 55px;
     height: 50%;
     z-index: 1;
     opacity: 0.9;
@@ -609,11 +607,11 @@ button {
   }
   
   img {
-    width: 220px;
+    width: 230px;
   height: auto;
    
   }
-   */
+  
 
   /* CATEGORY  */
 
@@ -627,7 +625,7 @@ button {
 
   .card {
     margin: auto;
-    min-width: 100px;
+    min-width: 130px;
 
     & h3 {
       letter-spacing: 1px;
@@ -638,42 +636,24 @@ button {
 
   .cardImage {
     & img {
-      max-width: 100px;
+      max-width: 130px;
       border-radius: 10px;
       margin-top: 10px;
       border: 1px solid rgb(224, 224, 7);
     }
   }
 
-  /* TRENDING SLIDER */
-
-  .main1 {
-    width: 100%;
-  
-  }
-
-  .image1 {
-    width: 110px;
-
-    & img {
-
-border:1px solid yellow;
-      width: 110px;
-
-    }
-  } 
+ 
 
   /* NAVBAR */
   .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-
-
 
     .left {
-     max-width: 60%;
+     max-width: 55%;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -759,6 +739,23 @@ width: 100%;
   }
 }
 
+/* trending slider  */
+.main1 {
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+}
 
+.image1 {
+  margin: auto;
+  width: 150px;
+
+
+  & img {
+margin: auto;
+    width: 140px;
+    height: 100px;
+  }
+}
 
 }

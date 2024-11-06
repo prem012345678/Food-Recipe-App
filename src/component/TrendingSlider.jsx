@@ -21,7 +21,6 @@ const TrendingSlider = () => {
     speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
-    initialSlide: 0,
     autoplay:true,
     cssEase: "linear",
     responsive: [
